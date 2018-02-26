@@ -175,9 +175,10 @@ sortLikes=(array)=>{
     }
 
     const BlogItem=({blogitem})=>{
-      
+      const TitleAndAuthor=blogitem.title + ' by '+ blogitem.author
       return (
-      <TogglableText textLabel={blogitem.title}>
+       
+      <TogglableText textLabel={TitleAndAuthor}>
        <OneBlog title={blogitem.title}
             author={blogitem.author}
             url={blogitem.url}

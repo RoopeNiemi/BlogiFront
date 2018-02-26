@@ -6,7 +6,6 @@ const OneBlog =({title,author,url,likes,user,blogId,handleClick})=>{
 return(
     <div>
         <div>
-        <p> Author:{author} </p>
         <a href ={url}> {url}: </a>
         <p> Likes:{likes} </p>
         <p> Added by {user.name} </p>
